@@ -1,1 +1,20 @@
-<h1>Home page</h1>
+<table class="table">
+    <thead class="thead-dark">
+        <tr>
+            <th scope="col">ID</th>
+            <th scope="col">taskName</th>
+            <th scope="col">createdDate</th>
+            <th scope="col">updatedDate</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each courses}}
+        <tr>
+            <th scope="row">{{this.ID}}</th>
+            <td>{{this.taskName}}</td>
+            <td>{{this.createdDate}}</td>
+            <td>{{this.updatedDate}}</td>
+        </tr>
+        {{/each}}
+    </tbody>
+</table>
